@@ -1,22 +1,17 @@
 #!/bin/bash
 # This script is used to clean up the /tmp and /var/log directories
 
-echo " _____             _____     _   "
-echo "|_   _|__   ___   |  ___|_ _| |_ "
-echo "  | |/ _ \ / _ \  | |_ / _\`| __|"
-echo "  | | (_) | (_) | |  _| (_| | |_ "
-echo "  |_|\___/ \___/  |_|  \__,_|\__|"
-
+cat << EOF
+ _____             _____     _   
+|_   _|__   ___   |  ___|_ _| |_ 
+  | |/ _ \ / _ \  | |_ / _\`| __|
+  | | (_) | (_) | |  _| (_| | |_ 
+  |_|\___/ \___/  |_|  \__,_|\__|
+EOF
 
 # get OS and display it
 hostname=$(hostname)
-echo ""
-echo ""
-echo ""
 echo "Your currently at ---> ${hostname} <---"
-echo ""
-echo ""
-echo ""
 
 # Reecord the current size of /tmp and /var/log
 tmp_before=$(du -sh /tmp)
