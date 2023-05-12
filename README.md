@@ -1,5 +1,5 @@
 # Useful shell scripts
-### Too fat
+### too_fat
 * This script is for cleaning up the files in /tmp and /var/log that not been used for a long time.
 
 ### do_it
